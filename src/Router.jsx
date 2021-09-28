@@ -1,24 +1,25 @@
 import React, {Component} from "react";
 import {
-  BrowserRouter as ReactRouter,
   Switch,
   Route
 } from "react-router-dom";
+import { ConnectedRouter } from "connected-react-router";
 import App from './App';
 import Home from './components/Home/index';
 import Login from './components/Login/index';
 
 export default class Router extends Component{
     render(){
+        const { history } = this.props;
         return(
-            <ReactRouter>
-                <App>
-                    <Switch>
-                        <Route exact path="/" component={Home}></Route>
-                        <Route path="/login" component={Login}></Route>
-                    </Switch>
-                </App>                
-            </ReactRouter>
+            <ConnectedRouter history={history}>
+                    <App>
+                        <Switch>
+                            <Route exact path="/" component={Home}></Route>
+                            <Route path="/login" component={Login}></Route>
+                        </Switch>
+                    </App>                
+            </ConnectedRouter>
         )
     }
 }

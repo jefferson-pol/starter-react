@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import configureStore from './redux/configureStore';
+import configureStore, { history } from './redux/configureStore';
 import Router from './Router';
 import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +10,7 @@ const store= configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router />
+    <Router  history={history}/>
   </Provider>,
   document.getElementById('root')
 );
