@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import configureStore from './redux/configureStore';
 import Router from './Router';
+import { Provider } from "react-redux";
 import reportWebVitals from './reportWebVitals';
 
+const store= configureStore();
+
 ReactDOM.render(
-  <Router />,
+  <Provider store={store}>
+    <Router />
+  </Provider>,
   document.getElementById('root')
 );
 
