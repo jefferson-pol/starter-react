@@ -5,8 +5,8 @@ import {
   Route
 } from "react-router-dom";
 import App from './App';
-import Home from './components/home';
-import Login from './components/login';
+import Home from './components/Home/index';
+import Login from './components/Login/index';
 
 export default class Router extends Component{
     render(){

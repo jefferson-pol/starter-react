@@ -1,3 +1,4 @@
+import { CAMBIAR_USUARIO } from "./constReducers/usersConsts";
 
 const inicialState = {
     user: 'jefferson',
@@ -5,7 +6,9 @@ const inicialState = {
 }
 
 export default function userReducer(state=inicialState,action){
-    switch(action.types){
+    switch(action.type){
+        case CAMBIAR_USUARIO:
+            return action.usuario;
         default:
             return state;
     }

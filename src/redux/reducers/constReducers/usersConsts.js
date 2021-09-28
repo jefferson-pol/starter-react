@@ -1,0 +1,1 @@
+export const CAMBIAR_USUARIO = "CAMBIAR_USUARIO";
