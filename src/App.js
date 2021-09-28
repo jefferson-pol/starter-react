@@ -1,14 +1,15 @@
-import Home from './components/home';
-import Login from './components/login';
+import React, {Component} from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        <Home />
-        <Login />
-    </div>
-  );
+
+class App extends Component{
+  render(){
+    return (
+      <div className="App">
+         {this.props.children}
+      </div>
+    )
+  }
 }
 
 export default App;
