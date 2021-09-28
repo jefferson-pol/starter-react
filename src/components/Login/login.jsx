@@ -30,7 +30,7 @@ export default class Login extends Component{
                 <Link to="/">Home</Link>
                 <h3>{user}</h3>
                 <h3>{email}</h3>
-                <button onClick={this.cambiarUsuario}>Cambiar Usuario</button>
+                <button className="btn btn-primary" onClick={this.cambiarUsuario}>Cambiar Usuario</button>
             </div>
         )
     }

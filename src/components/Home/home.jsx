@@ -28,7 +28,7 @@ export default class Home extends Component{
                 <Link to="/login">Login</Link>
                 <h2>{user}</h2>
                 <h2>{email}</h2>
-                <button onClick={()=>{this.cambiarUsuario()}}>Cambiar Usuario</button>
+                <button className="btn btn-success" onClick={()=>{this.cambiarUsuario()}}>Cambiar Usuario</button>
             </div>
         )
     }
