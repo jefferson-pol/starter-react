@@ -5,8 +5,11 @@ import {
 } from "react-router-dom";
 import { ConnectedRouter } from "connected-react-router";
 import App from './App';
-import Home from './components/Home/index';
-import Login from './components/Login/index';
+import {
+    Home,
+    Login
+} from './components';
+
 
 export default class Router extends Component{
     render(){
