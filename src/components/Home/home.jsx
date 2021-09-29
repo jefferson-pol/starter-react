@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import  { Link } from "react-router-dom"; 
+import  { Link } from "react-router-dom";
 
 export default class Home extends Component{
     constructor(props){
         super(props);
         this.mostrarProps();
     }
-    
+
     mostrarProps=()=>{
         console.log("Desde Home: ",this.props);
     }
@@ -21,10 +21,10 @@ export default class Home extends Component{
     }
 
     render(){
-        const { user, email } = this.props; 
+        const { user, email } = this.props;
         return(
             <div>
-                <h1>Bienvenidos a la pagina principal</h1>             
+                <h1>Bienvenidos a la pagina principal</h1>
                 <Link to="/login">Login</Link>
                 <h2>{user}</h2>
                 <h2>{email}</h2>
