@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import { withRouter } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@popperjs/core';
-import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
 
 
