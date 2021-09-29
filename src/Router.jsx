@@ -7,7 +7,8 @@ import { ConnectedRouter } from "connected-react-router";
 import App from './App';
 import {
     Home,
-    Login
+    Login,
+    Facturas
 } from './components';
 
 
@@ -20,8 +21,9 @@ export default class Router extends Component{
                         <Switch>
                             <Route exact path="/" component={Home}></Route>
                             <Route path="/login" component={Login}></Route>
+                            <Route path="/facturas" component={Facturas}></Route>
                         </Switch>
-                    </App>                
+                    </App>
             </ConnectedRouter>
         )
     }

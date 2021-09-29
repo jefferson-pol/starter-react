@@ -1,0 +1,5 @@
+const  LOAD_FACTURAS = 'LOAD_FACTURAS';
+
+export {
+  LOAD_FACTURAS
+};
